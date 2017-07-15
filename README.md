@@ -5,14 +5,9 @@ Description
 -----------
 This template is made from scratch, with basic blogger features. This template is already optimize with seo, so you can focus on design and add more features. If seo on this template not good you can add seo techniques as you like.
 
-Additional Code
+Support Us
 -----------
-Recent Post
-~~~ .html
-<script type="text/javascript">
-function showrecentposts(json){for(var i=0;i<numposts;i++){var entry=json.feed.entry[i];var posttitle=entry.title.$t;var posturl;if(i==json.feed.entry.length)break;for(var k=0;k<entry.link.length;k++){if(entry.link[k].rel=='alternate'){posturl=entry.link[k].href;break}}posttitle=posttitle.link(posturl);if(standardstyling)document.write('<li>');document.write(posttitle)}if(standardstyling)document.write('</li>')}</script>
-<script type="text/javascript">var numposts = 10;var showpostdate = true;var showpostsummary = true;var numchars = 100;var standardstyling = true;</script><script type="text/javascript" src="http://readcyber.blogspot.com/feeds/posts/default?orderby=published&amp;alt=json-in-script&amp;callback=showrecentposts"></script>
-~~~
+Please support us to added more features by submit your idea at this github reposity and dont forget to pull request if you get bug and error codes.
 
 Important Link For Debugging
 -----------
@@ -25,7 +20,7 @@ Important Link For Debugging
 
 Thanks To
 -----------
-* [Google Developer](https://developers.google.com/web/))
+* [Google Developer](https://developers.google.com/web/)
 * [Blogger API](https://www.blogger.com/api/v3)
 
 License
