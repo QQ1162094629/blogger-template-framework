@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<link expr:href='data:blog.url' rel='canonical'/>
+<b:if cond='data:blog.isMobile'>
+<meta content='noindex,nofollow' name='robots'/>
+</b:if>
+<b:include data='blog' name='all-head-content'/>
+<b:if cond='data:blog.pageType == &quot;index&quot;'> 
+<title><data:blog.pageTitle/></title> 
+<b:else/>
+<title><data:blog.pageName/></title>
+</b:if>
+<b:if cond='data:blog.homepageUrl == data:blog.url'>
+<meta content='Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5, Keyword 6, dst' name='keywords'/>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<meta expr:content='data:blog.pageName + &quot; , &quot; + data:blog.title + &quot; , &quot; + data:blog.pageTitle' name='keywords'/>
+<meta expr:content='data:blog.pageName' name='subject'/>
+<meta expr:content='data:blog.pageName' name='abstract'/>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+<meta expr:content='data:blog.pageName + &quot; , &quot; + data:blog.title + &quot; , &quot; + data:blog.pageTitle' name='keywords'/>
+<meta expr:content='data:blog.pageName' name='subject'/>
+<meta expr:content='data:blog.pageName' name='abstract'/>
+</b:if>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='indonesian' name='language'/>
+<meta content='id' name='geo.country'/>
+<meta content='indonesia' name='geo.placename'/>
+<meta content='Your Name' name='author'/>
+<meta content='index,follow' name='robots'/>
+<meta content='2 days' name='revisit-after'/>
+<meta content='2 days' name='revisit'/>
+<meta content='never' name='expires'/>
+<meta content='always' name='revisit'/>
+<meta content='global' name='distribution'/>
+<meta content='blogger' name='generator'/>
+<meta content='general' name='rating'/>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='index, follow' name='googlebot'/>
+<meta content='follow, all' name='Googlebot-Image'/>
+<meta content='follow, all' name='msnbot'/>
+<meta content='follow, all' name='Slurp'/>
+<meta content='follow, all' name='ZyBorg'/>
+<meta content='follow, all' name='Scooter'/>
+<meta content='all' name='spiders'/>
+<meta content='all' name='WEBCRAWLERS'/>
+<meta content='aeiwi, alexa, alltheWeb, altavista, aol netfind, anzwers, canada, directhit, euroseek, excite, overture, go, google, hotbot. infomak, kanoodle, lycos, mastersite, national directory, northern light, searchit, simplesearch, Websmostlinked, webtop, what-u-seek, aol, yahoo, webcrawler, infoseek, excite, magellan, looksmart, bing, cnet, googlebot' name='search engines'/>
+<b:skin><![CDATA[/*
+-----------------------------------------------
+Name     :  Agus Purwantoro Blogger Template
+Version  :  1.0
+Designer :  Aguxp (Agus Purwantoro)
+URL      :  aguspurwantoro.com
+Release  :  July 2017
+----------------------------------------------- */
+
+/* Variable definitions
+   ====================
+   <Variable name="keycolor" description="Main Color" type="color" default="#117AC9" value="#117AC9"/>
+
+   <Group description="Main Element" selector="body">
+     <Variable name="body.background.color" description="Background" type="color" default="#EEEEEE" value="#EEEEEE"/>
+   </Group>
+
+   <Group description="Font Selector" selector="#wrapper">
+     <Variable name="font.selector" description="Choose font" type="font"
+         default="normal normal 12px Verdana, Geneva" value="normal normal 12px Verdana, Geneva"/>
+   </Group>
+   
+   <Group description="Color Selector" selector="#wrapper">
+     <Variable name="color.selector" description="Choose color" type="color" default="#008FFF" value="#008FFF"/>
+   </Group>
+
+   <Variable name="body.background" description="Body Background" type="background"
+       color="$(body.background.color)" default="$(color) none repeat scroll top left" value="$(color) none repeat scroll top left"/>
+   <Variable name="body.background.override" description="Body Background Override" type="string" default="" value=""/>
+
+*/
+
+/* Content
+-------------------------- */
+
+/* Main 
+-------------------------- */
+
+/* Sidebar
+-------------------------- */
+
+/* Label
+-------------------------- */
+
+/* Iklan
+-------------------------- */
+
+/* Breadcrumbs
+-------------------------- */
+
+/* Footer
+-------------------------- */
+
+/* Social Icon
+-------------------------- */
+
+/* Page Navigation
+-------------------------- */
+
+/* Comments
+-------------------------- */
+
+/* Recent Posts
+-------------------------- */
+
+/* Header
+-------------------------- */
+
+/* Info
+-------------------------- */
+
+/* Navigation
+-------------------------- */
+
+/* Search Box
+-------------------------- */
+
+/* Subscribe
+-------------------------- */
+
+/* Optimize Tag
+-------------------------- */
+
+/* Responsive Page
+-------------------------- */
+
+]]></b:skin>
+<!-- static page -->
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<style type="text/css">
+
+</style>
+</b:if>
+</b:if>
+<!-- error page -->
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'> 
+<style type='text/css'>
+
+</style> 
+</b:if>
+<!--RELATED POST THUMBNAIL START-->
+<script type='text/javascript'>//<![CDATA[
+var relnojudul = 0;
+var relmaxtampil = 5;
+var numchars = 170;
+var morelink = "";
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2 4=f g();2 5=f g();2 9=f g();2 b=f g();s K(L,M){2 7=L.19("<");l(2 i=0;i<7.3;i++){8(7[i].N(">")!=-1){7[i]=7[i].O(7[i].N(">")+1,7[i].3)}}7=7.1a("");7=7.O(0,M-1);y 7}s 1b(z){l(2 i=0;i<z.P.6.3;i++){2 6=z.P.6[i];4[n]=6.A.$t;u="";8("Q"B 6){u=6.Q.$t}C 8("R"B 6){u=6.R.$t}9[n]=K(u,1c);8("S$T"B 6){D=6.S$T.1d}C{D="1e://1f.1g.1h/1i/1j/1k/1l/d/1m.1n"}b[n]=D;l(2 k=0;k<6.E.3;k++){8(6.E[k].U==\'1o\'){5[n]=6.E[k].v;F}}n++}}s V(a,e){l(2 j=0;j<a.3;j++)8(a[j]==e)y 1p;y 1q}s 1r(){2 m=f g(0);2 o=f g(0);2 p=f g(0);2 q=f g(0);l(2 i=0;i<5.3;i++){8(!V(m,5[i])){m.3+=1;m[m.3-1]=5[i];o.3+=1;o[o.3-1]=4[i];p.3+=1;p[p.3-1]=9[i];q.3+=1;q[q.3-1]=b[i]}}4=o;5=m;9=p;b=q;l(2 i=0;i<4.3;i++){2 c=w.W((4.3-1)*w.X());2 Y=4[i];2 Z=5[i];2 10=9[i];2 11=b[i];4[i]=4[c];5[i]=5[c];9[i]=9[c];b[i]=b[c];4[c]=Y;5[c]=Z;9[c]=10;b[c]=11}2 x=0;2 r=w.W((4.3-1)*w.X());2 12=r;2 h;2 13=14.1s;1t(x<15){8(5[r]!=13){h="<16 G=\'H-A 1u\'>";h+="<a v=\'"+5[r]+"\' U=\'1v\'  I=\'J\' A=\'"+4[r]+"\'><1w 1x=\'"+b[r]+"\' /></a>";h+="<a v=\'"+5[r]+"\' I=\'J\'>"+4[r]+"</a>";h+="<17 G=\'H-18\'>"+9[r]+" ... <17 G=\'H-18\'>";h+="</16>";14.1z(h);x++;8(x==15){F}}8(r<4.3-1){r++}C{r=0}8(r==12){F}}}',62,98,'||var|length|reljudul|relurls|entry|cuplik|if|relcuplikan||relgambar|informasi|||new|Array|relhasil||||for|tmp|relnojudul|tmp2|tmp3|tmp4||function||postcontent|href|Math|rangkumanPosts|return|json|title|in|else|postimg|link|break|class|news|target|_top|saringtags|suchas|panjang|indexOf|substring|feed|content|summary|media|thumbnail|rel|contains|floor|random|tempJudul|tempUrls|tempCuplikan|tempGambar|rini|dirURL|document|relmaxtampil|li|span|text|split|join|relpostimgcuplik|numchars|url|https|lh3|ggpht|com|_xcD4JK_dIjU|SnamIh0KTCI|AAAAAAAADMA|hLjqmEbdtkw|noimagethumb|gif|alternate|true|false|artikelterkait|URL|while|clearfix|nofollow|img|src|morelink|write'.split('|'),0,{}))
+//]]></script>
+<!--RELATED POST THUMBNAIL END-->
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'/>
+<script>
+//<![CDATA[
+(function(a,k,g){a.fn.tinyNav=function(l){var c=a.extend({active:"selected",header:"",indent:"- ",label:""},l);return this.each(function(){g++;var h=a(this),b="tinynav"+g,f=".l_"+b,e=a("<select/>").attr("id",b).addClass("tinynav "+b);if(h.is("ul,ol")){""!==c.header&&e.append(a("<option/>").text(c.header));var d="";h.addClass("l_"+b).find("a").each(function(){d+='<option value="'+a(this).attr("href")+'">';var b;for(b=0;b<a(this).parents("ul, ol").length-1;b++)d+=c.indent;d+=a(this).text()+"</option>"});
+e.append(d);c.header||e.find(":eq("+a(f+" li").index(a(f+" li."+c.active))+")").attr("selected",!0);e.change(function(){k.location.href=a(this).val()});a(f).after(e);c.label&&e.before(a("<label/>").attr("for",b).addClass("tinynav_label "+b+"_label").append(c.label))}})}})(jQuery,this,0);
+//]]>
+</script>
+<script>
+// TinyNav.js
+$(function () {
+  $(&#39;#menu&#39;).tinyNav();
+});
+</script>
+</head>
+<body>
+<div id='wrapper'>
+<header id='header-wrapper'>
+<b:section class='header' id='header' maxwidgets='1'>
+<b:widget id='Header1' locked='true' title='Agus Purwantoro Blogger Template (Header)' type='Header'></b:widget>
+</b:section>
+<b:section class='header' id='header-ads' maxwidgets='1'/>
+<div class='clear'/>
+</header>
+<article id='article-wrapper'>
+<b:section class='main' id='main'>
+  <b:widget id='Blog1' locked='true' title='Posting Blog' type='Blog'></b:widget>
+</b:section>
+<nav id='navigation'>
+<ul id='nav'>
+<li class='current'><a expr:href='data:blog.homepageUrl' style='color: #fff;'>Home</a></li>
+<li><a href='#'>Your Label</a></li>
+<li><a href='#'>Your Label</a></li>
+<li><a href='#'>Your Label</a></li>
+<li><a href='#'>More Label..</a>
+<ul>
+<li><a href='#'>Sub Label</a></li>
+<li><a href='#'>Sub Label</a>
+<ul>
+<li><a href='#'>Sub Sub Label</a></li>
+<li><a href='#'>Sub Sub Label</a></li>
+<li><a href='#'>Sub Sub Label</a></li>
+</ul>
+</li>
+<li><a href='#'>Sub Label</a></li>
+</ul>
+</li>
+<li><a href='/404'>Error 404</a></li>
+</ul>
+</nav>
+</article>
+<aside id='sidebar-wrapper'>
+<b:section class='sidebar' id='sidebar' showaddelement='yes'></b:section>
+</aside>
+<div class='clear'/>
+<footer id='footer-wrapper'>
+<b:section class='footer' id='footer-1' showaddelement='yes'/>
+<b:section class='footer' id='footer-2' showaddelement='yes'/>
+<b:section class='footer' id='footer-3' showaddelement='yes'/>
+</footer> 
+</div>
+</body>
+</HTML>
