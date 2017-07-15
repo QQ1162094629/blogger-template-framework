@@ -5,9 +5,13 @@ Description
 -----------
 This template is made from scratch, with basic blogger features. This template is already optimize with seo, so you can focus on design and add more features. If seo on this template not good you can add seo techniques as you like.
 
+Seo
+-----------
+Seo is simple, 70% you and 30% platform, and this template made with great meta tags and stunning header structure, h1 for title, h2 for post, and h3 for sidebar, simple but seo killer.
+
 Support Us
 -----------
-Please support us to added more features by submit your idea at this github reposity and dont forget to pull request if you get bug and error codes.
+Please support us to added more features by submit your idea at this github repository and dont forget to pull request if you get bug and error codes.
 
 Important Link For Debugging
 -----------
